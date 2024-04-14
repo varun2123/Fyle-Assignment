@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section {
+    display: block;
+}
+
+.container,
+.form-box {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background: #1a9ae2;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-box {
+    max-width: 550px;
+    margin: 20px auto;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 30px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 55px;
+}
+
+.form-box .input-field {
+
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form-box input {
+    display: block;
+    min-height: 20px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-box input[type='text'] {
+    padding-right: 25px
+}
+
+.form-box h2 {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.form-box label {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+.form-box input[type='submit'] {
+    background: #1a9ae2;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.form-box .fa {
+    position: absolute;
+    right: 10px;
+    margin-top: -30px;
+}
+
+.form-box .input-field.error input {
+    border-color: #f00;
+    border-width: 2px;
+}
+
+.form-box .input-field.error .fa {
+    color: #f00;
+}
+
+.form-box .input-field.success input {
+    border-color: #0b0;
+    border-width: 2px;
+}
+
+.form-box .input-field.success .fa {
+    color: #0b0;
+}
+
+.input-field span {
+    display: none;
+}
+
+.input-field.error span {
+    color: #f00;
+    display: block
+}
+
+.input-field.success span {
+    color: #0b0;
+}
+
+/* Add this CSS to make all input boxes the same size */
+.form-box input[type='text'],
+.form-box select {
+    width: 100%;
+}
+
+/* Optionally, you can adjust the padding for select elements to align with text inputs */
+.form-box select {
+    padding: 10px;
+}
+
+/* Adjust the position of the question mark icon */
+.form-box label img {
+    vertical-align: middle;
+    margin-left: 5px; /* Adjust as needed */
+}
+
+/* Adjust the position of the question mark icon */
+.form-box label {
+    display: flex;
+    align-items: center;
+}
+
+.form-box label img {
+    margin-left: 5px; /* Adjust as needed */
+}
