@@ -116,29 +116,25 @@ body {
     color: #0b0;
 }
 
-/* Add this CSS to make all input boxes the same size */
 .form-box input[type='text'],
 .form-box select {
     width: 100%;
 }
 
-/* Optionally, you can adjust the padding for select elements to align with text inputs */
 .form-box select {
     padding: 10px;
 }
 
-/* Adjust the position of the question mark icon */
 .form-box label img {
     vertical-align: middle;
-    margin-left: 5px; /* Adjust as needed */
+    margin-left: 5px; 
 }
 
-/* Adjust the position of the question mark icon */
 .form-box label {
     display: flex;
     align-items: center;
 }
 
 .form-box label img {
-    margin-left: 5px; /* Adjust as needed */
+    margin-left: 5px;
 }
