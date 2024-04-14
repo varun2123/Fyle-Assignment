@@ -54,7 +54,6 @@ function calculateTax() {
 
     // Proceed only if form is valid
     if (isValid) {
-        // Calculate overall income after deductions
         var overallIncome = grossIncomeValue + extraIncomeValue - deductionsValue;
 
         // Calculate tax
@@ -85,15 +84,6 @@ function showModal(tax) {
     modal.show();
 }
 
-// function setError(inputElement, message) {
-//     var parentBox = inputElement.parentElement;
-//     parentBox.className = "input-field error";
-//     var span = parentBox.querySelector("span");
-//     var fa = parentBox.querySelector(".fa");
-//     span.innerText = message;
-//     fa.className = "fa fa-exclamation-circle";
-// }
-
 function setError(inputElement, message) {
     var parentBox = inputElement.parentElement;
     parentBox.className = "input-field error";
@@ -101,7 +91,6 @@ function setError(inputElement, message) {
     fa.className = "fa fa-exclamation-circle";
     fa.setAttribute("data-bs-title", message);
     fa.setAttribute("data-bs-toggle", "tooltip");
-    // fa.setAttribute("data-bs-placement", "bottom");
 
     new bootstrap.Tooltip(fa);
 }
